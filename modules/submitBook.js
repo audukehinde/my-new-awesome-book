@@ -1,6 +1,6 @@
 import AwesomeBook from './awesomeook.js';
 
-function submitBook() {
+const submitBook = () => {
   const form = document.querySelector('form');
   const awesomeBook = new AwesomeBook();
   form.addEventListener('submit', (e) => {
@@ -12,7 +12,6 @@ function submitBook() {
     });
     e.target.reset();
   });
-}
+};
 
-// eslint-disable-next-line import/prefer-default-export
-export { submitBook };
+export default submitBook;

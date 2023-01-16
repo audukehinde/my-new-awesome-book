@@ -1,4 +1,4 @@
-function navButtons() {
+const navButtons = () => {
   const navBtns = document.querySelectorAll('.nav-button');
   navBtns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
@@ -6,9 +6,8 @@ function navButtons() {
       document.body.className = `show-${text.toLowerCase().replace(' ', '-')}`;
     });
   });
-}
+};
 
 navButtons();
 
-// eslint-disable-next-line import/prefer-default-export
-export { navButtons };
+export default navButtons;
