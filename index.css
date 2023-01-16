@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+form,
+main,
+.form-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+header a {
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+}
+
+header,
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+
+header ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+header ul li button {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+header ul li:nth-child(2) {
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  padding: 0 10px;
+}
+
+main {
+  padding: 10px 10px;
+  overflow-y: scroll;
+}
+
+main time {
+  align-self: flex-end;
+}
+
+input {
+  width: 270px;
+  height: 30px;
+  padding: 10px;
+  outline: none;
+}
+
+.btn-submit {
+  padding: 4px 12px;
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#books {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.book-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+}
+
+.book-container button {
+  padding: 4px 10px;
+}
+
+.book-container:nth-child(odd) {
+  background-color: rgb(152, 152, 167);
+}
+
+.book-container div {
+  flex: 1;
+}
+
+.border-box {
+  padding: 8px 16px;
+  margin: 8px;
+  border: 1.6px solid black;
+}
+
+.content {
+  height: 100%;
+  display: none;
+}
+
+.all-book-section {
+  width: 100%;
+}
+
+.contact-list {
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
+.content h2 {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.show-list .content:nth-of-type(1) {
+  display: block;
+}
+
+.show-add-new .content:nth-of-type(2) {
+  display: block;
+}
+
+.show-contact .content:nth-of-type(3) {
+  display: block;
+}
+
+.show-list header nav ul li:nth-child(1) {
+  color: blue;
+}
+
+.show-add-new header nav ul li:nth-child(2) {
+  color: blue;
+}
+
+.show-contact header nav ul li:nth-child(3) {
+  color: blue;
+}
