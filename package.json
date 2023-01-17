@@ -4,7 +4,7 @@
   "description": "HTML,CSS & JS template for Microverse. All linters and readme file included.",
   "main": "index.html",
   "scripts": {
-    "linters": "yarn hint . && yarn run-stylelint && yarn eslint .",
+    "linters": "npx hint . && npm run run-stylelint && npx eslint .",
     "run-stylelint": "stylelint \"**/*.css\""
   },
   "keywords": [

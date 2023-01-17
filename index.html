@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Microverse</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="show-list">
+    <header class="border-box">
+      <a href="#">Awesome Book</a>
+      <nav>
+        <ul>
+          <li><button type="button" class="nav-button">List</button></li>
+          <li><button type="button" class="nav-button">Add new</button></li>
+          <li><button type="button" class="nav-button">Contact</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <time datetime="2023-11-07"></time>
+      <section class="content all-book-section">
+        <h2>All Awesome books</h2>
+        <div id="books"></div>
+      </section>
+
+      <section class="content">
+        <h2>Add a New Book</h2>
+        <form action="#">
+          <input type="text" placeholder="Title" required />
+          <input type="text" placeholder="Auhor" required />
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+      </section>
+
+      <section class="content">
+        <h2>Contact Information</h2>
+        <div>
+          <p>
+            Do you have any question or you just want to say "Hello"?
+            <span>You can reach out to us!</span>
+          </p>
+          <br />
+          <ul class="contact-list">
+            <li>Our Email: microverse.org</li>
+            <li>Our Phone Number: +1234 567 345 890</li>
+            <li>Our Address: Street Name 123, 3456</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-box">
+      Copyright 2023: Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Vitae doloremque veniam laboriosam? Adipisci, velit asperiores.
+    </footer>
+
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
